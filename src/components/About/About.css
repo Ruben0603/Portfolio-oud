@@ -1,0 +1,113 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #41433E;
+  height: 105vh;
+  color: #fff;
+}
+.about .aboutMe-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .aboutMe-container .aboutMe-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 45%;
+  padding: 0 5%;
+}
+.about .aboutMe-container .aboutMe-right .aboutMe-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about .aboutMe-container .aboutMe-right .aboutMe-right-content h2 {
+  color: #7D80DA;
+  font-size: 40px;
+}
+.about .aboutMe-container .aboutMe-right .aboutMe-right-content p {
+  font-size: 20px;
+  text-align: center;
+}
+.about .aboutMe-container .aboutMe-right .photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Ensures the image outside the viewport is hidden */
+}
+.about .aboutMe-container .aboutMe-right .photo-container .photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: transform 5s cubic-bezier(0.645, 0.045, 0.355, 1); /* Only transition the transform property */
+}
+.about .aboutMe-container .aboutMe-right .photo-container .photo img {
+  width: 70%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  z-index: 2;
+  transform: translateY(-100vh); /* Initially position the image outside the viewport on the right */
+}
+.about .aboutMe-container .aboutMe-right .photo-container.slide-in .photo img {
+  animation: moveImage 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes moveImage {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.about .aboutMe-container .aboutMe-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 30%;
+  padding-right: 5%;
+}
+.about .aboutMe-container .aboutMe-left h2 {
+  color: #7D80DA;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about .aboutMe-container .aboutMe-left p {
+  font-size: 18px;
+  text-align: center;
+}
+.about .triangle-top {
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-top: 200px solid #090809;
+  padding-bottom: 10%;
+}
+.about .triangle-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  padding-top: 7%;
+}
+.about .triangle-container .triangle-bottom {
+  width: 0;
+  height: 0;
+  border-left: 500px solid transparent;
+  border-right: 500px solid transparent;
+  border-top: 300px solid #41433E;
+}/*# sourceMappingURL=About.css.map */

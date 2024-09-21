@@ -1,0 +1,57 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 10%;
+}
+.experience .experience-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+.experience .experience-intro h1 {
+  width: auto;
+  font-size: 4rem;
+  margin-bottom: 8%;
+}
+.experience .experience-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.experience .experience-content .experience-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 20vh;
+  width: 60%;
+  border-top: 2px solid #333;
+}
+.experience .experience-content .experience-item .experience-item-date {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.experience .experience-content .experience-item .experience-item-date h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.experience .experience-content .experience-item .experience-item-date p {
+  font-size: 1.2rem;
+}
+.experience .experience-content .experience-item .experience-item-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}/*# sourceMappingURL=Experience.css.map */

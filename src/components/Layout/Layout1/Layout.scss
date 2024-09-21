@@ -1,0 +1,36 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    gap: 10vh;
+    width: 100%;
+    z-index: -1;
+    background-color: #090809;
+    
+    .noPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 3rem 0;
+            padding: 5%;
+            width: 40%;
+
+            h2 {
+                font-size: 1.8rem;
+                color: black;
+            }
+        }
+    }
+}

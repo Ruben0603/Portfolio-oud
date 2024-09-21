@@ -1,0 +1,42 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #090809;
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+
+    h2 {
+      color: #7D80DA;
+      width: 30%;
+      font-size: 6rem;
+      margin-bottom: 5%;
+    }
+
+    .contact-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .contact-channel {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          color: white;
+          text-decoration: none;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

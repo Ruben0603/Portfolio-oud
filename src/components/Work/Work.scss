@@ -1,0 +1,107 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5% 20% 10% 20%;
+
+  .work-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 80%;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .work-item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      height: 20vh;
+      width: 100%;
+      border-top: 2px solid #333;
+  
+      .work-item-text{
+        width: 50%;
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+    
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .work-item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+          
+        .work-item-content-langues{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 0.5rem;
+      
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: #333 1px solid;
+            padding: 2%;
+            height: 15%;
+            width: 10%;
+            border-radius: 10vh;
+            font-weight: bold;
+            font-size: 0.8rem;
+          }
+        }
+
+        .work-item-content-links{
+          width: 100%;
+
+      
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+
+
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: #333 1px solid;
+              padding: 1%;
+              height: 15%;
+              width: 20%;
+              border-radius: 10vh;
+              font-weight: bold;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
